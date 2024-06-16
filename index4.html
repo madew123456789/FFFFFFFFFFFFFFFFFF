@@ -1498,17 +1498,21 @@ function R(min, max) {return min + Math.random() * (max - min);};
         </audio>
     </div>  
     <script>
+ <script>
         let defaultPlayer = document.getElementById("intro_audio");
         
         let storyPlayer = document.getElementById("story_audio");
-       
+        
+        let gifList = ["gif-1","gif-2"];
+        
+        let foldList = ["1"];
+        
         let currentIndex;
         
         let currentGifIndex = 1;
         
         let sound = true;
         
-  
         
         
         document.onreadystatechange = function() {
